@@ -1,0 +1,748 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    top: 0;
+    justify-content: space-evenly;
+    padding: 10px;
+
+}
+.left_img {
+    object-fit: contain;
+    height: 260px;
+    padding-left: 22%;
+    margin-top: -30px;
+}
+
+.left_header{
+    width: 50%;
+}
+
+.right_header{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+
+.right_header_options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    color: grey;
+    cursor: pointer;
+    padding-left: 5%;
+    margin-top: 25px;
+}
+
+.right_header_options:after{
+    content: "";
+    background-color: lightgrey;
+    position: absolute;
+    width: 5px;
+    height: 110px;
+    left: 50%;
+    display: block;
+    margin-left: 1108px;
+    margin-top: 14px;
+}
+
+.login_controls{
+    margin-top: 30px;
+    height: 60%;
+    width: 120%;
+    cursor: pointer;
+    margin-left: 95px;
+}
+
+.join_button{
+    font-size: 50px;
+    margin-left: 70px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    color: black;
+    background:transparent ;
+    margin-right: -50px;
+}
+.join:hover{
+    background-color:lightgrey;
+    border-radius: 165px;
+    height: 165px;
+    
+}
+
+.sign{
+    background-color:white;
+    border-radius: 165px;
+    color: blue;
+    padding-left: 20px;
+    height: 165px;
+    border-style: solid;
+    border-width: thin;
+}
+
+.sign:hover{
+    background-color: lightblue;
+}
+
+.sign_button{
+    font-size: 50px;
+    margin-left: 31px;
+    cursor: pointer;
+    border:none;
+    background-color: #fff;
+    color: blue;
+    background: transparent;
+    
+}
+
+.right_header_options:hover{
+    color: black;
+}
+
+.right_options:hover{
+    color: black;
+}
+
+.right_options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+    height: 75px;
+}
+
+.right_header_options h4{
+    font-size: 45px;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.first{
+    width: 100%;
+}
+
+.self_intro{
+    width: 50%;
+    float:left;
+}
+
+.intro{
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+    font-size: 160px;
+    font-weight: 200;
+    margin-left: 23%;
+    margin-top: 5%;
+    padding-bottom: 8%;
+    color: saddlebrown;
+}
+
+.boxes{
+    background-color: white;
+    height: 180px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 40px;
+    margin-left: 23%;
+    border-style: solid;
+    border-radius: 33px;
+    border-width: 0.01em;
+    border-color: black;
+}
+
+.boxes:hover{
+    box-shadow:  20px 20px 20px lightgrey;
+    cursor: pointer;
+}
+
+.boxes p{
+    font-size: 60px;
+    padding-left: 60px;
+}
+
+.right_intro{
+    display: flex;
+    flex-direction: column;
+    align-items: self end;
+    width: 50%;
+    float: left;
+}
+
+.right_intro img{
+    height: 1605px;
+    margin-top: 90px;
+    padding-left: 125px;
+}
+
+.topics{
+    width: 100%;
+    background-color: rgb(245, 243, 243);
+    height: 900px;
+}
+
+.left_topics{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    float: left;
+    height: 900px;
+}
+.left_topics h2{
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+    font-size: 145px;
+    font-weight: 200;
+    margin-left: 25%;
+    margin-top: 10%;
+    color: black;
+}
+
+.right_topics{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 900px;
+    justify-content: center;
+    
+}
+
+.right_topics h2{
+    font-weight: 200;
+    font-size: 50px;
+    color: black;
+    margin-top: 5%;
+    margin-left: 45px;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+.ul{
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+li{
+    text-align: left;
+}
+
+.content_topics{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    justify-items: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 35px;
+    margin-left: 37px;
+    margin-right: 18px;
+}
+
+.c_t_s_1{
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+    background-color: transparent;
+    text-decoration: none;
+    color: blue;
+    font-size: 70px;
+    height: 175px;
+    width: 515px;
+    padding-left: 51px;
+    padding-top: 30px;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 99px;
+}
+
+.c_t_s_1:hover{
+    background-color: rgb(225, 234, 239);
+}
+
+.c_t_s{
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+    background-color: transparent;
+    color: black;
+    text-decoration: none;
+    align-items: center;
+    font-size: 70px;
+    height: 175px;
+    width: 445px;
+    padding-left: 51px;
+    padding-top: 30px;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 99px;
+}
+c_t_s:hover{
+background-color: gray;
+cursor: pointer;
+}
+
+.c_t_s_3{
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+    background-color: transparent;
+    color: black;
+    text-decoration: none;
+    align-items: center;
+    font-size: 70px;
+    height: 155px;
+    width: 315px;
+    padding-left: 38px;
+    padding-top: 15px;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 99px;
+}
+
+.c_t_s_5{
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+    background-color: transparent;
+    color: black;
+    text-decoration: none;
+    align-items: center;
+    font-size: 70px;
+    height: 155px;
+    width: 460px;
+    padding-left: 38px;
+    padding-top: 15px;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 99px;
+}
+
+.c_t_s_6{
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+    background-color: transparent;
+    color: black;
+    text-decoration: none;
+    align-items: center;
+    font-size: 70px;
+    height: 155px;
+    width: 865px;
+    padding-left: 38px;
+    padding-top: 15px;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 99px;
+}
+
+.c_t_s_9{
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+    background-color: transparent;
+    color: black;
+    text-decoration: none;
+    align-items: center;
+    font-size: 70px;
+    height: 155px;
+    width: 625px;
+    padding-left: 38px;
+    padding-top: 15px;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 99px;
+}
+
+.section_1{
+    width: 100%;
+}
+
+.left_sec_1{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    float: left;
+}
+
+.left_sec_1 h2{
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+    font-size: 145px;
+    font-weight: 200;
+    margin-left: 25%;
+    margin-top: 10%;
+    color: black;
+}
+
+.right_sec_1{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+}
+
+.right_sec_1 h4{
+    font-weight: 200;
+    font-size: 50px;
+    color: black;
+    margin-top: 5%;
+    margin-left: 45px;
+}
+
+.c_t_s_2{
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+    background-color: transparent;
+    color: black;
+    text-decoration: none;
+    align-items: center;
+    font-size: 70px;
+    height: 175px;
+    width: 827px;
+    padding-left: 51px;
+    padding-top: 30px;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 99px;
+}
+
+.c_t_s_10{
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+    background-color: transparent;
+    color: black;
+    text-decoration: none;
+    align-items: center;
+    font-size: 70px;
+    height: 175px;
+    width: 865px;
+    padding-left: 51px;
+    padding-top: 30px;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 99px;
+}
+
+.button_div{
+    margin-top: 156px;
+    margin-left: 77px;
+}
+
+.button{
+    width: 270px;
+    height: 100px;
+    padding-top: 30px;
+}
+.button:hover{
+    background-color: rgb(231, 228, 228);
+    cursor: pointer;
+}
+
+.button_show{
+    display: contents;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+    font-size: 50px;
+    align-items: center;
+    margin-top: 170px;
+    margin-left: 80px;
+}
+
+.section_2{
+    width: 100%;
+    background-color: rgb(251, 247, 242);
+}
+
+.left_sec_2{
+    width: 50%;
+    float: left;
+}
+.left_sec_2 h2{
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+    font-size: 145px;
+    font-weight: 200;
+    margin-left: 25%;
+    margin-top: 10%;
+    color: rgb(185, 17, 17);
+}
+
+.right_sec_2{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+}
+
+.right_sec_2_box{
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+    background-color: transparent;
+    text-decoration: none;
+    color: blue;
+    font-size: 70px;
+    height: 175px;
+    width: 515px;
+    padding-left: 51px;
+    padding-top: 30px;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 99px;
+    margin-top: 270px;
+}
+
+.section_3{
+    width: 100%;
+    background-color: rgb(252, 252, 251);
+    height: 2500px;
+}
+
+.content_topics img{
+    height: 1455px;
+    width: 1370px;
+    margin-top: 33%;
+}
+
+.left_sec_3{
+    width: 50%;
+    float: left;
+    margin-top: 6%;
+}
+
+.left_sec_3 h2{
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+    font-size: 145px;
+    font-weight: 300;
+    margin-left: 25%;
+    margin-top: 10%;
+    color: rgb(67, 20, 20);
+}
+
+.left_sec_3 p{
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+    font-size: 81px;
+    font-weight: 100;
+    margin-left: 25%;
+    margin-top: 2%;
+    color: black;
+}
+
+.sec_4{
+    width: 100%;
+}
+
+.left_sec_4{
+    display: flex;
+    width: 50%;
+    float: left;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.left_sec_4 img{
+    height: 755px;
+}
+.left_sec_4 h2{
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+    font-size: 145px;
+    font-weight: 300;
+    margin-left: 25%;
+    margin-top: 10%;
+    margin-bottom: 120px;
+    color: rgb(67, 20, 20);
+}
+
+.right_sec_4{
+    display: flex;
+    width: 50%;
+    float: left;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.right_sec_4 img{
+    height: 755px;
+    padding-left: 108px;
+}
+.right_sec_4 h2{
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+    font-size: 145px;
+    font-weight: 300;
+    margin-left: 5%;
+    margin-top: 10%;
+    margin-bottom: 120px;
+    color: rgb(67, 20, 20);
+}
+
+.boxes_rec{
+    background-color: white;
+    height: 180px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 40px;
+    margin-left: 23%;
+    border-style: solid;
+    border-radius: 33px;
+    border-width: 0.01em;
+    border-color: black;
+    cursor: pointer;
+    margin-left: 102px;
+}
+.boxes_rec p{
+    font-size: 60px;
+    padding-left: 60px;
+}
+
+.sec_5{
+    width: 100%;
+}
+
+.left_sec_5{
+    display: flex;
+    width: 40%;
+    float: left;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.left_sec_5 iframe{
+    width: 88%;
+    height: 966px;
+    margin-left: 70%;
+    margin-top: 24%;
+    z-index: 1;
+}
+
+.right_sec_5{
+    display: flex;
+    width: 60%;
+    float: left;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 253, 253);
+    height: 2000px;
+}
+.right_sec_5 h2{
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+    font-size: 145px;
+    font-weight: 400;
+    margin-top: 10%;
+    color: rgb(230 86 86);
+}
+
+.sec_6{
+    width: 100%;
+    background:linear-gradient(to top, #b7ddf5 0%, white 100%);
+}
+.sec_6_heading{
+    width: 100%;
+    
+}
+.sec_6_heading h2{
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+    font-size: 170px;
+    font-weight: 100;
+    margin-left: 12%;
+    margin-top: 7%;
+    margin-bottom: 120px;
+    color: rgb(6, 6, 6);
+}
+
+.sec_6 img{
+    width: 100%;
+}
+
+.body_end{
+    width: 100%;
+    background-color: #f5f2f2;
+    margin-top: 70px;
+}
+
+.div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    float: left;
+    width: 20%;
+}
+
+.div a{
+    font-size: 50px;
+    text-decoration: none;
+    padding: 10px;
+    color: gray;
+}
+
+
+.div h2{
+    font-size: 63px;
+    height: 111px;
+    margin-top: 76px;
+    font-weight: 100;
+}
+
+.end_linkedin_logo{
+    
+    margin-top: 86px;
+    float: left;
+}
+.end_linkedin_logo a{
+    font-size: 75px;
+    margin-left: 351px;
+    color: #0f2dd8;
+    text-decoration: none;
+}
+
+.end_linkedin_logo_1{
+    
+    margin-top: 35px;
+    float: left;
+}
+.end_linkedin_logo_1 a{
+    font-size: 54px;
+    margin-left: 600px;
+    color: black;
+    text-decoration: none;
+}
+
+.footer{
+    width: 100%;
+}
+
+.foot{
+    float: left;
+    margin-left: 2%;
+    font-size: 40px;
+    padding-top: 44px;
+}
+.foot a{
+    padding: 23px;
+    text-decoration: none;
+    color: gray;
+}
+
+
+
+
+
+
+
+
